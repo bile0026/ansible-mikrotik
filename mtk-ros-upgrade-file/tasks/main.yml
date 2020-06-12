@@ -1,0 +1,14 @@
+---
+# tasks file for mtk-ros-upgrade
+  - name: New FTP file off the router
+    copy:
+      src: files/{{ router_os_image }}
+      dest: "{{ router_os_image }}"
+    delegate_to: localhost
+
+#     - name: Reboot the router
+#       routeros_command:
+#         commands: ":execute {/system reboot;delay 1;quit}"
+# #      when: current is version_compare(upgrade, '<')
+# #      when: current != upgrade
+
