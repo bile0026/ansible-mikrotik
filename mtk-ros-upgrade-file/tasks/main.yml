@@ -1,11 +1,9 @@
 ---
 # tasks file for mtk-ros-upgrade
-  - name: New FTP file off the router
+  - name: Transfer file off the router
     net_put:
       src: files/{{ router_os_image }}
       dest: "{{ router_os_image }}"
-      mode: binary
-      protocol: scp
     register: transfer_output
 
   - debug: var=transfer_output
