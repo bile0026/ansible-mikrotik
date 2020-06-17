@@ -27,7 +27,7 @@
 
   - name: Write configuration to file
     copy:
-      content: "{{ output }}"
+      content: "{{ output.stdout_lines }}"
       dest: "{{ current_config }}"
 
   - name: Cleanup configs
