@@ -6,7 +6,7 @@
       dest: "{{ router_os_image }}"
     register: transfer_output
 
-  - debug: var=transfer_output
+#  - debug: var=transfer_output
 
 #     - name: Reboot the router
 #       routeros_command:
