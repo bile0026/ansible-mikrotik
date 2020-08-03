@@ -2,7 +2,7 @@
 - name: Check neighbor tables and then update the interface comments with room names
   connection: network_cli
   gather_facts: false
-  hosts: cheatham_idf_switches
+  hosts: all
   vars:
 #    ansible_command_timeout: 120
 

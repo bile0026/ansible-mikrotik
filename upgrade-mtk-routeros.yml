@@ -1,6 +1,6 @@
 ---
 - name: Check ROS and upgrade if needed
-  hosts: r1
+  hosts: all
   gather_facts: no
   strategy: free
   vars:
